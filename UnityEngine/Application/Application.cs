@@ -72,7 +72,8 @@ namespace UnityEngine
             catch (Exception e)
             {
                 Debug.Log(e);
-                Console.ReadKey();
+                Debug.Log("Press Any Key To Exit!");
+                Debug.WaitKey();
             }
         }
 
@@ -91,13 +92,13 @@ namespace UnityEngine
                 Debug.Log(string.Format("[{0,-7}]\t{1}", item.Key, item.Value.Key));
             }
 
-            var key = Console.ReadKey();
+            var key = Debug.WaitKey();
             while (!_menus.ContainsKey(key.Key))
             {
                 Debug.Log("Invalid,Input again:");
-                key = Console.ReadKey();
+                key = Debug.WaitKey();
             }
-            Console.WriteLine();
+            Debug.Log("");
             if (_menus[key.Key].Value != null)
                 _menus[key.Key].Value();
         }

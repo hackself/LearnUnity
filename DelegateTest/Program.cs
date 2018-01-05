@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using UnityEngine;
 
 namespace DelegateTest
 {
@@ -25,7 +23,7 @@ namespace DelegateTest
             {
                 myDelegate += () =>
                 {
-                    Console.WriteLine("new delegatel 1");
+                    Debug.Log("new delegatel 1");
                 };
             }
 
@@ -34,13 +32,13 @@ namespace DelegateTest
             {
                 myDelegate += delegate ()
                 {
-                    Console.WriteLine("new delegatel 2:" + a);
+                    Debug.Log("new delegatel 2:" + a);
                 };
             }
 
             myDelegate = () =>
             {
-                Console.WriteLine("new delegatel 2");
+                Debug.Log("new delegatel 2");
             };
 
             myDelegate();

@@ -39,5 +39,10 @@ namespace UnityEngine
             Console.WriteLine(obj.ToString());
             LogColor(oldColor);
         }
+
+        public static ConsoleKeyInfo WaitKey()
+        {
+            return Console.ReadKey();
+        }
     }
 }

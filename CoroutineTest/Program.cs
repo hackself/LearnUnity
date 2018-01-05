@@ -15,7 +15,7 @@ namespace CoroutineTest
             for (int i = 1; i < 6; ++i)
             {
                 yield return new WaitForSeconds(1);
-                Console.WriteLine("Test_1 i:" + i);
+                Debug.Log("Test_1 i:" + i);
                 yield return StartCoroutine(Test_2(i));
             }
         }
@@ -25,7 +25,7 @@ namespace CoroutineTest
             for (int i = 1; i < 6; ++i)
             {
                 yield return new WaitForSeconds(2);
-                Console.WriteLine("Test_2:" + (10 * value + i));
+                Debug.Log("Test_2:" + (10 * value + i));
             }
         }
 
