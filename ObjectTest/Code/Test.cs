@@ -10,7 +10,7 @@ using UnityEngine;
 namespace ObjectTest
 {
     class Test : MonoBehaviour
-    {
+    { 
         void Awake()
         {
             Debug.Log("Test Awake");

@@ -1,5 +1,0 @@
-D:\LearnUnity\LearnUnity\CommonLib\bin\Debug\CommonLib.dll
-D:\LearnUnity\LearnUnity\CommonLib\bin\Debug\CommonLib.pdb
-D:\LearnUnity\LearnUnity\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
-D:\LearnUnity\LearnUnity\CommonLib\obj\Debug\CommonLib.dll
-D:\LearnUnity\LearnUnity\CommonLib\obj\Debug\CommonLib.pdb
