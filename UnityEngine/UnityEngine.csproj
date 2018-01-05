@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56CEDDA8-32D4-4544-B8E8-9A3801E16A0E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BC6D4CDB-CC34-459F-A3DD-39D6CF06BEF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CoroutineTest</RootNamespace>
-    <AssemblyName>CoroutineTest</AssemblyName>
+    <RootNamespace>CommonLib</RootNamespace>
+    <AssemblyName>CommonLib</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,14 +38,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Exception\MissingReferenceException.cs" />
+    <Compile Include="Attribute\DisallowMultipleComponentAttribute.cs" />
+    <Compile Include="Coroutine\Coroutine.cs" />
+    <Compile Include="Coroutine\CoroutineManager.cs" />
+    <Compile Include="Coroutine\WaitForSeconds.cs" />
+    <Compile Include="Coroutine\YieldInstruct.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="Application\Application.cs" />
+    <Compile Include="Exception\DisallowMultipleException.cs" />
+    <Compile Include="Object\Behaviour.cs" />
+    <Compile Include="Object\Component.cs" />
+    <Compile Include="Object\GameObject.cs" />
+    <Compile Include="Object\MonoBehaviour.cs" />
+    <Compile Include="Object\Object.cs" />
+    <Compile Include="Object\Scene.cs" />
+    <Compile Include="Object\SceneManager.cs" />
+    <Compile Include="Application\Time.cs" />
+    <Compile Include="Object\Transform.cs" />
+    <Compile Include="Application\UnityMessage.cs" />
+    <Compile Include="Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UnityEngine\UnityEngine.csproj">
-      <Project>{bc6d4cdb-cc34-459f-a3dd-39d6cf06bef0}</Project>
-      <Name>UnityEngine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

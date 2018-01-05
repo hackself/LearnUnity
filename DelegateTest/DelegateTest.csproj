@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56CEDDA8-32D4-4544-B8E8-9A3801E16A0E}</ProjectGuid>
+    <ProjectGuid>{7826B95D-FD20-438F-AB77-92DBF0BAFC4A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CoroutineTest</RootNamespace>
-    <AssemblyName>CoroutineTest</AssemblyName>
+    <RootNamespace>DelegateTest</RootNamespace>
+    <AssemblyName>DelegateTest</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,12 +42,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UnityEngine\UnityEngine.csproj">
-      <Project>{bc6d4cdb-cc34-459f-a3dd-39d6cf06bef0}</Project>
-      <Name>UnityEngine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
