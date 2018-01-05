@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Code\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test.cs" />
-    <Compile Include="Test1.cs" />
-    <Compile Include="Test2.cs" />
+    <Compile Include="Code\Test.cs" />
+    <Compile Include="Code\Test1.cs" />
+    <Compile Include="Code\Test2.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UnityEngine\UnityEngine.csproj">
