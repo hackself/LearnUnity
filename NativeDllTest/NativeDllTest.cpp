@@ -1,12 +1,16 @@
 // NativeDllTest.cpp : Defines the exported functions for the DLL application.
 //
 
-#include "stdafx.h"
+#ifdef _WIN32
+	#define NativeAPI _declspec(dllexport)
+#else
+	#define	NativeAPI
+#endif
 
-#define NativeAPI _declspec(dllexport)
-
+#ifdef __cplusplus
 extern "C"
 {
+#endif
 	NativeAPI double add(double a, double b)
 	{
 		return a + b;
@@ -26,5 +30,6 @@ extern "C"
 	{
 		return a / b;
 	}
-
+#ifdef __cplusplus
 }
+#endif

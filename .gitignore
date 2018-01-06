@@ -15,3 +15,7 @@
 /NativeDllTest_CSharp/bin
 /NativeDllTest_CSharp/obj
 /LearnUnity.VC.db
+/Win32
+/NativeDllTest/libs
+/NativeDllTest/obj
+/NativeDllTest/Win32

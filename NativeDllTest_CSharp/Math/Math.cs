@@ -8,16 +8,16 @@
 using System.Runtime.InteropServices;
 namespace NativeDllTest
 {
-    public static class Math
+    public static class NativeMath
     {
-        const string MathDll = "NativeDllTest.dll";
+        const string MathDll = "NativeDllTest";
         [DllImport(MathDll,EntryPoint ="add")]
-        extern public static double add(double a, double b);
+        extern public static double Add(double a, double b);
         [DllImport(MathDll,EntryPoint ="sub")]
-        extern public static double sub(double a, double b);
+        extern public static double Sub(double a, double b);
         [DllImport(MathDll,EntryPoint ="mul")]
-        extern public static double mul(double a, double b);
+        extern public static double Mul(double a, double b);
         [DllImport(MathDll,EntryPoint ="div")]
-        extern public static double div(double a, double b);
+        extern public static double Div(double a, double b);
     }
 }

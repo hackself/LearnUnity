@@ -7,7 +7,7 @@ namespace ObjectTest
     public class Program : MonoBehaviour
     {
 
-#if UNITY_EDITOR
+#if UNITY_5_3_OR_NEWER
         private void Start()
         {
             this.StartCoroutine(Test(this.gameObject));
@@ -28,7 +28,7 @@ namespace ObjectTest
 
         static WaitForSeconds PrintWait(float second)
         {
-#if !UNITY_EDITOR
+#if !UNITY_5_3_OR_NEWER
             SceneManager.Instance.currentScene.PrintHierarchy();
 #endif
             return new WaitForSeconds(second);
