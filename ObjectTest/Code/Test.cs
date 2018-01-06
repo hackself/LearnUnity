@@ -13,7 +13,7 @@ namespace ObjectTest
     { 
         void Awake()
         {
-            Debug.Log("Test Awake");
+            Debug.Log("Test Awake"); 
         }
 
         void Start()

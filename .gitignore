@@ -7,3 +7,11 @@
 /DelegateTest/bin
 /UnityEngine/bin
 /UnityEngine/obj
+/UnityProject/ObjectTest/Temp
+/Debug
+/ipch
+/NativeDllTest/Debug
+/NativeDllTest/x64
+/NativeDllTest_CSharp/bin
+/NativeDllTest_CSharp/obj
+/LearnUnity.VC.db
